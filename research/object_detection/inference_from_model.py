@@ -87,6 +87,7 @@ detection_model = load_model(model_name)
 def show_inference(model, image_path):
     # the array based representation of the image will be used later in order to prepare the
     # result image with boxes and labels on it.
+    file_name = image_path.stem
     image_np = np.array(Image.open(image_path))
     # Actual detection.
     output_dict = run_inference_for_single_image(model, image_np)
@@ -97,6 +98,7 @@ def show_inference(model, image_path):
         output_dict['detection_classes'],
         output_dict['detection_scores'],
         category_index,
+        xml_file_name=file_name,
         instance_masks=output_dict.get('detection_masks_reframed', None),
         use_normalized_coordinates=True,
         line_thickness=8)

@@ -941,6 +941,7 @@ def visualize_boxes_and_labels_on_image_array(
     classes,
     scores,
     category_index,
+    xml_file_name,
     instance_masks=None,
     instance_boundaries=None,
     keypoints=None,
@@ -1123,7 +1124,7 @@ def visualize_boxes_and_labels_on_image_array(
           keypoint_edge_width=line_thickness // 2)
 
   if new_xml != False:
-    xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, 'image')
+    xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, xml_file_name)
     xml.gerenate_basic_structure()
 
   return image
