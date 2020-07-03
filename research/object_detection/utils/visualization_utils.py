@@ -41,6 +41,7 @@ import tensorflow.compat.v1 as tf
 from object_detection.core import keypoint_ops
 from object_detection.core import standard_fields as fields
 from object_detection.utils import shape_utils
+from utils import generate_xml
 
 _TITLE_LEFT_MARGIN = 10
 _TITLE_TOP_MARGIN = 10
@@ -1008,6 +1009,8 @@ def visualize_boxes_and_labels_on_image_array(
   """
   # Create a display string (and color) for every box location, group any boxes
   # that correspond to the same location.
+  new_xml = False
+
   box_to_display_str_map = collections.defaultdict(list)
   box_to_color_map = collections.defaultdict(str)
   box_to_instance_masks_map = {}
@@ -1040,6 +1043,7 @@ def visualize_boxes_and_labels_on_image_array(
           if not agnostic_mode:
             if classes[i] in six.viewkeys(category_index):
               class_name = category_index[classes[i]]['name']
+              new_xml = True
             else:
               class_name = 'N/A'
             display_str = str(class_name)
@@ -1064,9 +1068,21 @@ def visualize_boxes_and_labels_on_image_array(
           box_to_color_map[box] = STANDARD_COLORS[
               classes[i] % len(STANDARD_COLORS)]
 
+  array_position = []
+  im_height, im_width, shape = image.shape
+
   # Draw all boxes onto image.
   for box, color in box_to_color_map.items():
     ymin, xmin, ymax, xmax = box
+    dict_position = {'xmin': 0, 'xmax': 0, 'ymin': 0, 'ymax': 0}
+
+    dict_position['ymin'] = ymin * im_height
+    dict_position['xmin'] = xmin * im_width
+    dict_position['ymax'] = ymax * im_height
+    dict_position['xmax'] = xmax * im_width
+
+    array_position.append(dict_position)
+
     if instance_masks is not None:
       draw_mask_on_image_array(
           image,
@@ -1105,6 +1121,10 @@ def visualize_boxes_and_labels_on_image_array(
           keypoint_edges=keypoint_edges,
           keypoint_edge_color=color,
           keypoint_edge_width=line_thickness // 2)
+
+  if new_xml != False:
+    xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, 'image')
+    xml.gerenate_basic_structure()
 
   return image
 
