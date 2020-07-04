@@ -96,5 +96,5 @@ ENV/
 
 # For mac
 .DS_Store
-research/object_detection/xml/*.xml
+# research/object_detection/xml/*.xml
 
