@@ -96,6 +96,5 @@ ENV/
 
 # For mac
 .DS_Store
-research/object_detection/test_images/*.jpg
 research/object_detection/xml/*.xml
 
