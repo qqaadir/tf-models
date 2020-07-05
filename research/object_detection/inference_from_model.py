@@ -8,6 +8,7 @@ import zipfile
 import os
 import pathlib
 
+# os.chdir(os.getcwd())
 
 from collections import defaultdict
 from io import StringIO
@@ -25,10 +26,10 @@ utils_ops.tf = tf.compat.v1
 # Patch the location of gfile
 tf.gfile = tf.io.gfile
 
-PATH_TO_LABELS = '/home/alvaro/Área de Trabalho/models/research/object_detection/data/mscoco_label_map.pbtxt'
+PATH_TO_LABELS = '/home/alvaro/Área de Trabalho/tf-models/research/object_detection/data/mscoco_label_map.pbtxt'
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS, use_display_name=True)
 
-PATH_TO_TEST_IMAGES_DIR = pathlib.Path('/home/alvaro/Área de Trabalho/models/research/object_detection/test_images')
+PATH_TO_TEST_IMAGES_DIR = pathlib.Path('/home/alvaro/Área de Trabalho/tf-models/research/object_detection/new_images')
 TEST_IMAGE_PATHS = sorted(list(PATH_TO_TEST_IMAGES_DIR.glob("*.jpg")))
 
 def load_model(model_name):
