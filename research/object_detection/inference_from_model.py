@@ -29,8 +29,8 @@ tf.gfile = tf.io.gfile
 PATH_TO_LABELS = '/home/alvaro/Área de Trabalho/tf-models/research/object_detection/data/mscoco_label_map.pbtxt'
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS, use_display_name=True)
 
-PATH_TO_TEST_IMAGES_DIR = pathlib.Path('/home/alvaro/Área de Trabalho/tf-models/research/object_detection/new_images')
-TEST_IMAGE_PATHS = sorted(list(PATH_TO_TEST_IMAGES_DIR.glob("*.jpg")))
+PATH_TO_UNLABELED_IMAGES_DIR = pathlib.Path('/home/alvaro/Área de Trabalho/tf-models/research/object_detection/unlabeled_data')
+UNLABELED_IMAGE_PATHS = sorted(list(PATH_TO_UNLABELED_IMAGES_DIR.glob("*.jpg")))
 
 def load_model(model_name):
     base_url = 'http://download.tensorflow.org/models/object_detection/'
@@ -107,6 +107,6 @@ def show_inference(model, image_path):
     # image = Image.fromarray(image_np)
     # image.show()
 
-for image_path in TEST_IMAGE_PATHS:
+for image_path in UNLABELED_IMAGE_PATHS:
     show_inference(detection_model, image_path)
 
