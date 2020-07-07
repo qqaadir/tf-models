@@ -1,7 +1,7 @@
 import xml.etree.cElementTree as ET
 from random import randrange
 import os
-
+os.chdir(os.getcwd())
 class GenerateXml(object):
     def __init__(self, box_array, im_width, im_height, inferred_class, file_name):
         self.inferred_class = inferred_class
@@ -31,7 +31,7 @@ class GenerateXml(object):
             ET.SubElement(bndBox, "ymax").text = str(i['ymax'])
 
         arquivo = ET.ElementTree(annotation)
-        arquivo.write("/home/alvaro/Área de Trabalho/tf-models/research/object_detection/xml/" + self.file_name + ".xml")
+        arquivo.write("./train_images/" + self.file_name + ".xml")
 
 def main():
     xml = GenerateXml([{'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}], '4000', '2000', 'miner', 'miner') # just for debuggind

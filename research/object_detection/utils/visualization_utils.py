@@ -42,6 +42,8 @@ from object_detection.core import keypoint_ops
 from object_detection.core import standard_fields as fields
 from object_detection.utils import shape_utils
 from utils import generate_xml
+import os
+os.chdir(os.getcwd())
 
 _TITLE_LEFT_MARGIN = 10
 _TITLE_TOP_MARGIN = 10
@@ -950,7 +952,7 @@ def visualize_boxes_and_labels_on_image_array(
     track_ids=None,
     use_normalized_coordinates=False,
     max_boxes_to_draw=20,
-    min_score_thresh=.5,
+    min_score_thresh=.8,
     agnostic_mode=False,
     line_thickness=4,
     groundtruth_box_visualization_color='black',
@@ -1126,6 +1128,9 @@ def visualize_boxes_and_labels_on_image_array(
   if new_xml != False:
     xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, xml_file_name)
     xml.gerenate_basic_structure()
+    old_img_path = './unlabeled_data/' + xml_file_name + '.jpg'
+    new_img_path = './train_images/' + xml_file_name + '.jpg'
+    os.rename(old_img_path, new_img_path)
 
   return image
 

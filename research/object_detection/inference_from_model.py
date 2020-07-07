@@ -41,6 +41,7 @@ def load_model(model_name):
     untar=True)
 
     model_dir = pathlib.Path(model_dir)/"saved_model"
+    # model_dir = pathlib.Path('/home/alvaro/Área de Trabalho/tf-models/research/object_detection/trained_model')
 
     # model = tf.saved_model.load(str(model_dir))
     model = tf.compat.v2.saved_model.load(str(model_dir), None)
