@@ -32,16 +32,8 @@ category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABE
 PATH_TO_UNLABELED_IMAGES_DIR = pathlib.Path('./unlabeled_data')
 UNLABELED_IMAGE_PATHS = sorted(list(PATH_TO_UNLABELED_IMAGES_DIR.glob("*.jpg")))
 
-def load_model(model_name):
-    base_url = 'http://download.tensorflow.org/models/object_detection/'
-    model_file = model_name + '.tar.gz'
-    model_dir = tf.keras.utils.get_file(
-    fname=model_name, 
-    origin=base_url + model_file,
-    untar=True)
-
-    model_dir = pathlib.Path(model_dir)/"saved_model"
-    # model_dir = pathlib.Path('/home/alvaro/Área de Trabalho/tf-models/research/object_detection/trained_model')
+def load_model(mode_dir):
+    model_dir = pathlib.Path(mode_dir)
 
     # model = tf.saved_model.load(str(model_dir))
     model = tf.compat.v2.saved_model.load(str(model_dir), None)
@@ -83,8 +75,7 @@ def run_inference_for_single_image(model, image):
 
     return output_dict
 
-model_name = 'ssd_mobilenet_v1_coco_2017_11_17'
-detection_model = load_model(model_name)
+detection_model = load_model('./trained_model/saved_model')
 
 def show_inference(model, image_path):
     # the array based representation of the image will be used later in order to prepare the
