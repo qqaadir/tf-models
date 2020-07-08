@@ -75,7 +75,7 @@ def run_inference_for_single_image(model, image):
 
     return output_dict
 
-detection_model = load_model('./trained_model/saved_model')
+detection_model = load_model('./fine_tuned_model/saved_model')
 
 def show_inference(model, image_path):
     # the array based representation of the image will be used later in order to prepare the
