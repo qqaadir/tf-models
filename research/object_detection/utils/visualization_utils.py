@@ -1013,6 +1013,7 @@ def visualize_boxes_and_labels_on_image_array(
   # Create a display string (and color) for every box location, group any boxes
   # that correspond to the same location.
   new_xml = False
+  print('IM HERRE')
 
   box_to_display_str_map = collections.defaultdict(list)
   box_to_color_map = collections.defaultdict(str)
@@ -1125,6 +1126,7 @@ def visualize_boxes_and_labels_on_image_array(
           keypoint_edge_color=color,
           keypoint_edge_width=line_thickness // 2)
 
+  print('NOTHING DETECTED')
   if new_xml != False:
     print('PASSING TO THE XML')
     xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, xml_file_name)
