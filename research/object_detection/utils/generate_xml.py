@@ -11,6 +11,7 @@ class GenerateXml(object):
         self.file_name = file_name
 
     def gerenate_basic_structure(self):
+        print('IN THE XML')
         annotation = ET.Element("annotation")
         ET.SubElement(annotation, "filename").text = self.file_name + ".jpg"
         size = ET.SubElement(annotation, "size")
@@ -31,6 +32,7 @@ class GenerateXml(object):
             ET.SubElement(bndBox, "ymax").text = str(i['ymax'])
 
         arquivo = ET.ElementTree(annotation)
+        print('CREATING XML FILE')
         arquivo.write("object_detection/train_images/" + self.file_name + ".xml")
 
 def main():

@@ -1126,12 +1126,13 @@ def visualize_boxes_and_labels_on_image_array(
           keypoint_edge_width=line_thickness // 2)
 
   if new_xml != False:
+    print('PASSING TO THE XML')
     xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, xml_file_name)
     xml.gerenate_basic_structure()
     old_img_path = 'object_detection/unlabeled_data/' + xml_file_name + '.jpg'
     new_img_path = 'object_detection/train_images/' + xml_file_name + '.jpg'
     os.rename(old_img_path, new_img_path)
-
+    print('MOVED IMAGES')
   return image
 
 

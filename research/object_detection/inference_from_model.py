@@ -100,5 +100,6 @@ def show_inference(model, image_path):
     # image.show()
 
 for image_path in UNLABELED_IMAGE_PATHS:
+    print('INFERING IMAGE')
     show_inference(detection_model, image_path)
 
