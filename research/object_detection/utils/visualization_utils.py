@@ -1128,8 +1128,8 @@ def visualize_boxes_and_labels_on_image_array(
   if new_xml != False:
     xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, xml_file_name)
     xml.gerenate_basic_structure()
-    old_img_path = './unlabeled_data/' + xml_file_name + '.jpg'
-    new_img_path = './train_images/' + xml_file_name + '.jpg'
+    old_img_path = 'object_detection/unlabeled_data/' + xml_file_name + '.jpg'
+    new_img_path = 'object_detection/train_images/' + xml_file_name + '.jpg'
     os.rename(old_img_path, new_img_path)
 
   return image
