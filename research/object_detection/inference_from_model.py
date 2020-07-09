@@ -26,10 +26,10 @@ utils_ops.tf = tf.compat.v1
 # Patch the location of gfile
 tf.gfile = tf.io.gfile
 
-PATH_TO_LABELS = './data/mscoco_label_map.pbtxt'
+PATH_TO_LABELS = 'object_detection/label_map/label_map.pbtxt'
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS, use_display_name=True)
 
-PATH_TO_UNLABELED_IMAGES_DIR = pathlib.Path('./unlabeled_data')
+PATH_TO_UNLABELED_IMAGES_DIR = pathlib.Path('object_detection/unlabeled_data')
 UNLABELED_IMAGE_PATHS = sorted(list(PATH_TO_UNLABELED_IMAGES_DIR.glob("*.jpg")))
 
 def load_model(mode_dir):
@@ -75,7 +75,7 @@ def run_inference_for_single_image(model, image):
 
     return output_dict
 
-detection_model = load_model('./fine_tuned_model/saved_model')
+detection_model = load_model('object_detection/fine_tuned_model/saved_model')
 
 def show_inference(model, image_path):
     # the array based representation of the image will be used later in order to prepare the
