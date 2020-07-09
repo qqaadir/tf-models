@@ -26,10 +26,10 @@ utils_ops.tf = tf.compat.v1
 # Patch the location of gfile
 tf.gfile = tf.io.gfile
 
-PATH_TO_LABELS = 'object_detection/label_map/label_map.pbtxt'
+PATH_TO_LABELS = '/content/tf-models/research/object_detection/label_map/label_map.pbtxt'
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS, use_display_name=True)
 
-PATH_TO_UNLABELED_IMAGES_DIR = pathlib.Path('object_detection/unlabeled_data')
+PATH_TO_UNLABELED_IMAGES_DIR = pathlib.Path('/content/tf-models/research/object_detection/unlabeled_data')
 UNLABELED_IMAGE_PATHS = sorted(list(PATH_TO_UNLABELED_IMAGES_DIR.glob("*.jpg")))
 
 def load_model(mode_dir):
@@ -44,6 +44,7 @@ def load_model(mode_dir):
 
 def run_inference_for_single_image(model, image):
     image = np.asarray(image)
+    print('READ IMAGE')
     # The input needs to be a tensor, convert it using `tf.convert_to_tensor`.
     input_tensor = tf.convert_to_tensor(image)
     # The model expects a batch of images, so add an axis with `tf.newaxis`.
@@ -73,6 +74,7 @@ def run_inference_for_single_image(model, image):
                                             tf.uint8)
         output_dict['detection_masks_reframed'] = detection_masks_reframed.numpy()
 
+    print('RETURNED SOMETHING')
     return output_dict
 
 detection_model = load_model('/content/models/research/fine_tuned_model/saved_model')
