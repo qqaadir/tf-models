@@ -41,7 +41,8 @@ import tensorflow.compat.v1 as tf
 from object_detection.core import keypoint_ops
 from object_detection.core import standard_fields as fields
 from object_detection.utils import shape_utils
-from utils import generate_xml
+
+from object_detection.utils import generate_xml
 import os
 os.chdir(os.getcwd())
 
