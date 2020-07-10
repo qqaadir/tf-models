@@ -944,7 +944,7 @@ def visualize_boxes_and_labels_on_image_array(
     classes,
     scores,
     category_index,
-    xml_file_name,
+    xml_file_name='null',
     instance_masks=None,
     instance_boundaries=None,
     keypoints=None,
