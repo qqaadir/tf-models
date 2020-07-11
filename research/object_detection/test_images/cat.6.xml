@@ -1,7 +1,7 @@
 <annotation>
 	<folder>test_images</folder>
 	<filename>cat.6.jpg</filename>
-	<path>/home/alvaro/Área de Trabalho/models/research/object_detection/test_images/cat.6.jpg</path>
+	<path>/home/alvaro/Área de Trabalho/tf-models/research/object_detection/test_images/cat.6.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,7 +12,7 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>person</name>
+		<name>cat</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
