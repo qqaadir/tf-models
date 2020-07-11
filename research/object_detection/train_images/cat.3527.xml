@@ -1,1 +1,26 @@
-<annotation><filename>cat.3527.jpg</filename><size><width>500</width><height>374</height><depth>3</depth></size><object><name>dog</name><pose>Unspecified</pose><truncated>0</truncated><difficult>0</difficult><bndbox><xmin>4.109621047973633</xmin><ymin>6.376576662063599</ymin><xmax>467.3943817615509</xmax><ymax>335.806435585022</ymax></bndbox></object></annotation>
+<annotation>
+	<folder>train_images</folder>
+	<filename>cat.3527.jpg</filename>
+	<path>/home/alvaro/Área de Trabalho/tf-models/research/object_detection/train_images/cat.3527.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>500</width>
+		<height>374</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>4</xmin>
+			<ymin>6</ymin>
+			<xmax>467</xmax>
+			<ymax>335</ymax>
+		</bndbox>
+	</object>
+</annotation>

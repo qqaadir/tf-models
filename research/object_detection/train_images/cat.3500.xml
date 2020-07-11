@@ -1,7 +1,7 @@
 <annotation>
-	<folder>new_images</folder>
+	<folder>train_images</folder>
 	<filename>cat.3500.jpg</filename>
-	<path>/home/alvaro/Área de Trabalho/tf-models/research/object_detection/new_images/cat.3500.jpg</path>
+	<path>/home/alvaro/Área de Trabalho/tf-models/research/object_detection/train_images/cat.3500.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -12,7 +12,7 @@
 	</size>
 	<segmented>0</segmented>
 	<object>
-		<name>dog</name>
+		<name>cat</name>
 		<pose>Unspecified</pose>
 		<truncated>0</truncated>
 		<difficult>0</difficult>
