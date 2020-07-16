@@ -44,7 +44,6 @@ def load_model(mode_dir):
 
 def run_inference_for_single_image(model, image):
     image = np.asarray(image)
-    print('READ IMAGE')
     # The input needs to be a tensor, convert it using `tf.convert_to_tensor`.
     input_tensor = tf.convert_to_tensor(image)
     # The model expects a batch of images, so add an axis with `tf.newaxis`.
@@ -74,7 +73,6 @@ def run_inference_for_single_image(model, image):
                                             tf.uint8)
         output_dict['detection_masks_reframed'] = detection_masks_reframed.numpy()
 
-    print('RETURNED SOMETHING')
     return output_dict
 
 detection_model = load_model('/content/tf-models/research/fine_tuned_model/saved_model')
@@ -102,6 +100,5 @@ def show_inference(model, image_path):
     # image.show()
 
 for image_path in UNLABELED_IMAGE_PATHS:
-    print('INFERING IMAGE')
     show_inference(detection_model, image_path)
 

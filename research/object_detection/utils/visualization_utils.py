@@ -1127,7 +1127,6 @@ def visualize_boxes_and_labels_on_image_array(
           keypoint_edge_color=color,
           keypoint_edge_width=line_thickness // 2)
 
-  print('NOTHING DETECTED')
   if new_xml != False and xml_file_name != 'null':
     print('PASSING TO THE XML')
     xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, xml_file_name)
