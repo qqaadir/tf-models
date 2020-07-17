@@ -16,6 +16,7 @@ from matplotlib import pyplot as plt
 from PIL import Image
 from IPython.display import display
 
+# export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 from utils import ops as utils_ops
 from utils import label_map_util
 from utils import visualization_utils as vis_util
@@ -102,3 +103,32 @@ def show_inference(model, image_path):
 for image_path in UNLABELED_IMAGE_PATHS:
     show_inference(detection_model, image_path)
 
+import glob
+import fnmatch
+
+def partition_data():
+    jpg_files_count = fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/labeled_data/'), '*.jpg')
+    train_images_count = len(fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/train_images'), '*.jpg'))
+    test_images_count = len(fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/test_images'), '*.jpg'))
+
+    if len(jpg_files_count) > 0:
+        test_quantity = int((20*(
+            len(jpg_files_count) + train_images_count + test_images_count)) / 100)
+
+        for image in jpg_files_count:
+            if test_quantity > 0:
+                new_img_path = '/content/tf-models/research/object_detection/test_images/' + image
+                new_xml_path = '/content/tf-models/research/object_detection/test_images/' + image.replace('jpg','xml')
+            else:
+                new_img_path = '/content/tf-models/research/object_detection/train_images/' + image
+                new_xml_path = '/content/tf-models/research/object_detection/train_images/' + image.replace('jpg','xml')
+
+            old_img_path = '/content/tf-models/research/object_detection/labeled_data/' + image
+            old_xml_path = '/content/tf-models/research/object_detection/labeled_data/' + image.replace('jpg','xml')
+
+            os.rename(old_img_path, new_img_path)
+            os.rename(old_xml_path, new_xml_path)
+
+            test_quantity -= 1
+
+partition_data()
