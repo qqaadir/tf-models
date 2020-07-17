@@ -130,5 +130,7 @@ def partition_data():
             os.rename(old_xml_path, new_xml_path)
 
             test_quantity -= 1
+            
+    print('IMAGES TRANSPORTED')
 
 partition_data()
