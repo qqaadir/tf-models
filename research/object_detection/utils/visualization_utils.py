@@ -1130,8 +1130,19 @@ def visualize_boxes_and_labels_on_image_array(
     print('PASSING TO THE XML')
     xml = generate_xml.GenerateXml(array_position, im_width, im_height, class_name, xml_file_name)
     xml.gerenate_basic_structure()
-    old_img_path = '/content/tf-models/research/object_detection/unlabeled_data/' + xml_file_name + '.jpg'
-    new_img_path = '/content/tf-models/research/object_detection/train_images/' + xml_file_name + '.jpg'
+
+    train_images = len(os.listdir('./train_imagens'))
+    test_images = len(os.listdir('./test_images'))
+
+    proportion_checker = test_images*100 / train_images
+
+    if proportion_checker < 20.0:
+      new_img_path = '/content/tf-models/research/object_detection/train_images/' + xml_file_name + '.jpg'
+    else:
+      new_img_path = '/content/tf-models/research/object_detection/train_images/' + xml_file_name + '.jpg'
+    
+    old_img_path = '/content/tf-models/research/object_detection/unlabeled_data/' + xml_file_name + '.jpg'  
+      
     os.rename(old_img_path, new_img_path)
     print('MOVED IMAGES')
   return image
