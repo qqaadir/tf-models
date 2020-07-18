@@ -7,6 +7,8 @@ import tensorflow as tf
 import zipfile
 import os
 import pathlib
+import glob
+import fnmatch
 
 os.chdir(os.getcwd())
 
@@ -102,9 +104,6 @@ def show_inference(model, image_path):
 
 for image_path in UNLABELED_IMAGE_PATHS:
     show_inference(detection_model, image_path)
-
-import glob
-import fnmatch
 
 def partition_data():
     jpg_files_count = fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/labeled_data/'), '*.jpg')
