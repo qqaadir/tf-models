@@ -7,11 +7,7 @@ import fnmatch
 
 os.chdir(os.getcwd())
 
-from collections import defaultdict
-from io import StringIO
-from matplotlib import pyplot as plt
 from PIL import Image
-from IPython.display import display
 
 # export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 from utils import ops as utils_ops
