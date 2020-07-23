@@ -1,11 +1,6 @@
 import numpy as np
 import os
-import six.moves.urllib as urllib
-import sys
-import tarfile
 import tensorflow as tf
-import zipfile
-import os
 import pathlib
 import glob
 import fnmatch
@@ -110,7 +105,7 @@ def partition_data():
     train_images_count = len(fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/train_images'), '*.jpg'))
     test_images_count = len(fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/test_images'), '*.jpg'))
 
-    if len(jpg_files_count) > 0:
+    if len(jpg_files_count) > 0: # 803 297 proporção final...
         test_quantity = int((20*(
             len(jpg_files_count) + train_images_count + test_images_count)) / 100)
 
