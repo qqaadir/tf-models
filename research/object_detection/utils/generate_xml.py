@@ -19,6 +19,7 @@ class GenerateXml(object):
         ET.SubElement(size, "depth").text = "3"
         
         for i in self.box_array:
+            # this a necessary structure for the XML file
             objectBox = ET.SubElement(annotation, "object")
             ET.SubElement(objectBox, "name").text = self.inferred_class
             ET.SubElement(objectBox, "pose").text = "Unspecified"
@@ -34,6 +35,7 @@ class GenerateXml(object):
         print('CREATING XML FILE')
         arquivo.write("/content/tf-models/research/object_detection/labeled_data/" + self.file_name + ".xml")
 
+# just for debuggind
 def main():
-    xml = GenerateXml([{'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}], '4000', '2000', 'miner', 'miner') # just for debuggind
+    xml = GenerateXml([{'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}, {'xmin': 0.5406094193458557, 'xmax': 0.6001364588737488, 'ymin': 0.6876631379127502, 'ymax': 0.7547240853309631}], '4000', '2000', 'miner', 'miner') 
     xml.gerenate_basic_structure()    

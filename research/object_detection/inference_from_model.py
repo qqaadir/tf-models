@@ -5,11 +5,13 @@ import pathlib
 import glob
 import fnmatch
 
+# this is important to ensure that your script is using the local "utils" folder
 os.chdir(os.getcwd())
 
 from PIL import Image
 
-# export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
+# export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim # Don't forget to run this on the research folder!!!
+
 from utils import ops as utils_ops
 from utils import label_map_util
 from utils import visualization_utils as vis_util
@@ -20,6 +22,8 @@ utils_ops.tf = tf.compat.v1
 # Patch the location of gfile
 tf.gfile = tf.io.gfile
 
+# If you don't want to use colab, change the path here!
+
 PATH_TO_LABELS = '/content/tf-models/research/object_detection/label_map/label_map.pbtxt'
 category_index = label_map_util.create_category_index_from_labelmap(PATH_TO_LABELS, use_display_name=True)
 
@@ -29,7 +33,6 @@ UNLABELED_IMAGE_PATHS = sorted(list(PATH_TO_UNLABELED_IMAGES_DIR.glob("*.jpg")))
 def load_model(mode_dir):
     model_dir = pathlib.Path(mode_dir)
 
-    # model = tf.saved_model.load(str(model_dir))
     model = tf.compat.v2.saved_model.load(str(model_dir), None)
 
     model = model.signatures['serving_default']
@@ -96,31 +99,33 @@ def show_inference(model, image_path):
 for image_path in UNLABELED_IMAGE_PATHS:
     show_inference(detection_model, image_path)
 
-def partition_data():
-    jpg_files_count = fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/labeled_data/'), '*.jpg')
+def partition_data(test_ratio):
+    # counts all JPG files in each folder
+    new_labeled_files_count = fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/labeled_data/'), '*.jpg')
     train_images_count = len(fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/train_images'), '*.jpg'))
     test_images_count = len(fnmatch.filter(os.listdir('/content/tf-models/research/object_detection/test_images'), '*.jpg'))
 
-    if len(jpg_files_count) > 0: # 803 297 proporção final...
-        test_quantity = int((20*(
-            len(jpg_files_count) + train_images_count + test_images_count)) / 100)
+    if len(new_labeled_files_count) > 0: 
+        # calculate the number of images in test folder (all the rest will go to the train)
+        test_quantity = int((test_ratio*(
+            len(new_labeled_files_count) + train_images_count + test_images_count)) / 100)
 
-        for image in jpg_files_count:
+        for image in new_labeled_files_count:
             if test_quantity > 0:
-                new_img_path = '/content/tf-models/research/object_detection/test_images/' + image
+                new_img_path = '/content/tf-models/research/object_detection/test_images/' + image # set path to test folder 
                 new_xml_path = '/content/tf-models/research/object_detection/test_images/' + image.replace('jpg','xml')
             else:
-                new_img_path = '/content/tf-models/research/object_detection/train_images/' + image
+                new_img_path = '/content/tf-models/research/object_detection/train_images/' + image # set path to train folder
                 new_xml_path = '/content/tf-models/research/object_detection/train_images/' + image.replace('jpg','xml')
 
             old_img_path = '/content/tf-models/research/object_detection/labeled_data/' + image
             old_xml_path = '/content/tf-models/research/object_detection/labeled_data/' + image.replace('jpg','xml')
 
-            os.rename(old_img_path, new_img_path)
-            os.rename(old_xml_path, new_xml_path)
+            os.rename(old_img_path, new_img_path) # move JPG
+            os.rename(old_xml_path, new_xml_path) # move XML
 
-            test_quantity -= 1
+            test_quantity -= 1 # decreases test, when 0 all the files goes to train
             
     print('IMAGES TRANSPORTED')
 
-partition_data()
+partition_data(20) # pass a int between 0 and 100
