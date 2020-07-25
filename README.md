@@ -18,7 +18,7 @@ A most detailed one is here: https://www.researchgate.net/publication/343167804_
 - Replace the images and XML files in *train_images* and *test_images* folder by yours.
 - Added all your unlabeled data into the *unlabeled_data* folder
 - Push your changes
-- Go to the Google Colab and play run button: https://drive.google.com/file/d/1srnHOXFv779IGT0lKKGbTn8J-5dGSAX_/view?usp=sharing
+- Go to the Google Colab (https://drive.google.com/file/d/1srnHOXFv779IGT0lKKGbTn8J-5dGSAX_/view?usp=sharing) make a copy in your drive, change the repository in the first cell by yours and play the run button 
 - That's it.
 
 # Contribute
