@@ -5,9 +5,9 @@
 Welcome to this project! This is a fork from TensorFlow Model Garden (https://github.com/tensorflow/models), to simplify for those who are already familiar with that repository. 
 
 # Propose
-This project helps you to create your labeled dataset in the object detection problem you are solving. This is done by some algorithms added in the original repository that has the intention to create new labels from your model.
+This project helps you to automatically create labels in your images for object detection problems training your model in a semi-supervised way. The process is done by some algorithms and modifications added in the original repository.
 
-The quick explanation is here: ''
+The quick explanation of how it works is here: https://towardsdatascience.com/tensorflow-semi-supervised-object-detection-architecture-757b9c88f270#1a19-7d5b5cba66d1
 
 A most detailed one is here: https://www.researchgate.net/publication/343167804_Semi-supervised_approach_to_auto-label_images_in_object_detection
 
@@ -20,3 +20,7 @@ A most detailed one is here: https://www.researchgate.net/publication/343167804_
 - Push your changes
 - Go to the Google Colab and play run button: https://drive.google.com/file/d/1srnHOXFv779IGT0lKKGbTn8J-5dGSAX_/view?usp=sharing
 - That's it.
+
+# Contribute
+
+If you want to help this idea to get better be free to open issues and collaborate. Have a good insight? Let's talk!
