@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>1</folder>
+<filename>FILE200420-174256F_600.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\1\FILE200420-174256F_600.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>698</xmin>
+        <ymin>637</ymin>
+        <xmax>819</xmax>
+        <ymax>749</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>truck</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>640</xmin>
+        <ymin>638</ymin>
+        <xmax>711</xmax>
+        <ymax>743</ymax>
+    </bndbox>
+</object>
+</annotation>

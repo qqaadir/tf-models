@@ -1,0 +1,38 @@
+<annotation>
+	<folder>group1</folder>
+	<filename>FILE200420-194359F_312.jpg</filename>
+	<path>F:\Night-time_data\Changchun_Snow_20200420\Changchun_grp1\Changchun_grp1\group1\FILE200420-194359F_312.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>minibus</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>102</xmin>
+			<ymin>650</ymin>
+			<xmax>183</xmax>
+			<ymax>696</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name> vehicle</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>892</xmin>
+			<ymin>678</ymin>
+			<xmax>965</xmax>
+			<ymax>747</ymax>
+		</bndbox>
+	</object>
+</annotation>

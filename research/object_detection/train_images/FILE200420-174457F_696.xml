@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>2</folder>
+<filename>FILE200420-174457F_696.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\2\FILE200420-174457F_696.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1093</xmin>
+        <ymin>662</ymin>
+        <xmax>1267</xmax>
+        <ymax>786</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1107</xmin>
+        <ymin>371</ymin>
+        <xmax>1290</xmax>
+        <ymax>461</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>54</xmin>
+        <ymin>634</ymin>
+        <xmax>276</xmax>
+        <ymax>751</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1052</xmin>
+        <ymin>663</ymin>
+        <xmax>1109</xmax>
+        <ymax>725</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>bus</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>574</xmin>
+        <ymin>368</ymin>
+        <xmax>1046</xmax>
+        <ymax>915</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>411</xmin>
+        <ymin>655</ymin>
+        <xmax>566</xmax>
+        <ymax>757</ymax>
+    </bndbox>
+</object>
+</annotation>

@@ -1,0 +1,118 @@
+<annotation>
+<folder>1</folder>
+<filename>FILE200420-174256F_1152.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\1\FILE200420-174256F_1152.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+
+<size><width>1920</width><height>1080</height><depth>3</depth></size><segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>957</xmin>
+        <ymin>575</ymin>
+        <xmax>1154</xmax>
+        <ymax>630</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1652</xmin>
+        <ymin>563</ymin>
+        <xmax>1758</xmax>
+        <ymax>674</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1736</xmin>
+        <ymin>566</ymin>
+        <xmax>1920</xmax>
+        <ymax>717</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>3</xmin>
+        <ymin>604</ymin>
+        <xmax>707</xmax>
+        <ymax>902</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1246</xmin>
+        <ymin>559</ymin>
+        <xmax>1483</xmax>
+        <ymax>628</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>473</xmin>
+        <ymin>574</ymin>
+        <xmax>976</xmax>
+        <ymax>785</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>206</xmin>
+        <ymin>550</ymin>
+        <xmax>295</xmax>
+        <ymax>601</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1163</xmin>
+        <ymin>574</ymin>
+        <xmax>1240</xmax>
+        <ymax>627</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>minibus</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1570</xmin>
+        <ymin>544</ymin>
+        <xmax>1655</xmax>
+        <ymax>603</ymax>
+    </bndbox>
+</object>
+</annotation>

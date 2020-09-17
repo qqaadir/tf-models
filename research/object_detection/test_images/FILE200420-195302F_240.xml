@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>7</folder>
+<filename>FILE200420-195302F_240.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\7\FILE200420-195302F_240.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1395</xmin>
+        <ymin>608</ymin>
+        <xmax>1663</xmax>
+        <ymax>789</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>678</xmin>
+        <ymin>666</ymin>
+        <xmax>828</xmax>
+        <ymax>752</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>874</xmin>
+        <ymin>650</ymin>
+        <xmax>1022</xmax>
+        <ymax>788</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>2</xmin>
+        <ymin>612</ymin>
+        <xmax>448</xmax>
+        <ymax>954</ymax>
+    </bndbox>
+</object>
+</annotation>

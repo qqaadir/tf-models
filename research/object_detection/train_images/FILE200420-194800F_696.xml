@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>5</folder>
+<filename>FILE200420-194800F_696.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\5\FILE200420-194800F_696.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>813</xmin>
+        <ymin>676</ymin>
+        <xmax>863</xmax>
+        <ymax>712</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>947</xmin>
+        <ymin>675</ymin>
+        <xmax>976</xmax>
+        <ymax>697</ymax>
+    </bndbox>
+</object>
+</annotation>

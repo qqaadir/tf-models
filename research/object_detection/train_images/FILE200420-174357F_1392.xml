@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>2</folder>
+<filename>FILE200420-174357F_1392.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\2\FILE200420-174357F_1392.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1403</xmin>
+        <ymin>583</ymin>
+        <xmax>1895</xmax>
+        <ymax>972</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>992</xmin>
+        <ymin>665</ymin>
+        <xmax>1058</xmax>
+        <ymax>715</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>909</xmin>
+        <ymin>666</ymin>
+        <xmax>938</xmax>
+        <ymax>690</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1258</xmin>
+        <ymin>631</ymin>
+        <xmax>1356</xmax>
+        <ymax>690</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>bus</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>935</xmin>
+        <ymin>652</ymin>
+        <xmax>975</xmax>
+        <ymax>689</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>895</xmin>
+        <ymin>631</ymin>
+        <xmax>920</xmax>
+        <ymax>646</ymax>
+    </bndbox>
+</object>
+</annotation>

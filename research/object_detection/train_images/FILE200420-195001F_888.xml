@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>6</folder>
+<filename>FILE200420-195001F_888.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\6\FILE200420-195001F_888.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>175</xmin>
+        <ymin>675</ymin>
+        <xmax>280</xmax>
+        <ymax>722</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>818</xmin>
+        <ymin>667</ymin>
+        <xmax>868</xmax>
+        <ymax>707</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>953</xmin>
+        <ymin>566</ymin>
+        <xmax>1001</xmax>
+        <ymax>599</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1032</xmin>
+        <ymin>667</ymin>
+        <xmax>1052</xmax>
+        <ymax>683</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>785</xmin>
+        <ymin>673</ymin>
+        <xmax>810</xmax>
+        <ymax>693</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>861</xmin>
+        <ymin>573</ymin>
+        <xmax>907</xmax>
+        <ymax>599</ymax>
+    </bndbox>
+</object>
+</annotation>

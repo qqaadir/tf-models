@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>3</folder>
+<filename>FILE200420-174557F_960.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\3\FILE200420-174557F_960.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1540</xmin>
+        <ymin>598</ymin>
+        <xmax>1814</xmax>
+        <ymax>752</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>847</xmin>
+        <ymin>681</ymin>
+        <xmax>881</xmax>
+        <ymax>707</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>212</xmin>
+        <ymin>676</ymin>
+        <xmax>402</xmax>
+        <ymax>726</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>813</xmin>
+        <ymin>683</ymin>
+        <xmax>838</xmax>
+        <ymax>709</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>885</xmin>
+        <ymin>682</ymin>
+        <xmax>929</xmax>
+        <ymax>715</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>80</xmin>
+        <ymin>660</ymin>
+        <xmax>186</xmax>
+        <ymax>723</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>bus</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>902</xmin>
+        <ymin>653</ymin>
+        <xmax>953</xmax>
+        <ymax>700</ymax>
+    </bndbox>
+</object>
+</annotation>

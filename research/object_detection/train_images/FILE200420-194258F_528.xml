@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>3</folder>
+<filename>FILE200420-194258F_528.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\3\FILE200420-194258F_528.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1179</xmin>
+        <ymin>455</ymin>
+        <xmax>1301</xmax>
+        <ymax>519</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1104</xmin>
+        <ymin>595</ymin>
+        <xmax>1141</xmax>
+        <ymax>625</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>773</xmin>
+        <ymin>683</ymin>
+        <xmax>830</xmax>
+        <ymax>717</ymax>
+    </bndbox>
+</object>
+</annotation>

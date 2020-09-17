@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>3</folder>
+<filename>FILE200420-174557F_1416.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\3\FILE200420-174557F_1416.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>112</xmin>
+        <ymin>663</ymin>
+        <xmax>156</xmax>
+        <ymax>700</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>273</xmin>
+        <ymin>664</ymin>
+        <xmax>388</xmax>
+        <ymax>761</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name> vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>280</xmin>
+        <ymin>582</ymin>
+        <xmax>1482</xmax>
+        <ymax>954</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>68</xmin>
+        <ymin>654</ymin>
+        <xmax>101</xmax>
+        <ymax>679</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1433</xmin>
+        <ymin>622</ymin>
+        <xmax>1593</xmax>
+        <ymax>759</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1748</xmin>
+        <ymin>544</ymin>
+        <xmax>1914</xmax>
+        <ymax>811</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>person</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>401</xmin>
+        <ymin>668</ymin>
+        <xmax>429</xmax>
+        <ymax>752</ymax>
+    </bndbox>
+</object>
+</annotation>

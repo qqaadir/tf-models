@@ -1,0 +1,58 @@
+<annotation>
+<folder>1</folder>
+<filename>FILE200420-174256F_384.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\1\FILE200420-174256F_384.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+
+<size><width>1920</width><height>1080</height><depth>3</depth></size><segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>990</xmin>
+        <ymin>653</ymin>
+        <xmax>1058</xmax>
+        <ymax>723</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1191</xmin>
+        <ymin>568</ymin>
+        <xmax>1222</xmax>
+        <ymax>621</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1564</xmin>
+        <ymin>605</ymin>
+        <xmax>1920</xmax>
+        <ymax>969</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>695</xmin>
+        <ymin>582</ymin>
+        <xmax>721</xmax>
+        <ymax>637</ymax>
+    </bndbox>
+</object>
+</annotation>

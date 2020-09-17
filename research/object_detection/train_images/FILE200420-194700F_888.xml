@@ -1,0 +1,34 @@
+<annotation>
+<folder>5</folder>
+<filename>FILE200420-194700F_888.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\5\FILE200420-194700F_888.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+
+<size><width>1920</width><height>1080</height><depth>3</depth></size><segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>729</xmin>
+        <ymin>675</ymin>
+        <xmax>853</xmax>
+        <ymax>752</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>226</xmin>
+        <ymin>649</ymin>
+        <xmax>489</xmax>
+        <ymax>809</ymax>
+    </bndbox>
+</object>
+</annotation>

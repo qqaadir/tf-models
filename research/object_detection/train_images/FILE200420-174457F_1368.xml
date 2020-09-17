@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>2</folder>
+<filename>FILE200420-174457F_1368.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\2\FILE200420-174457F_1368.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1033</xmin>
+        <ymin>662</ymin>
+        <xmax>1113</xmax>
+        <ymax>720</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>minibus</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>219</xmin>
+        <ymin>647</ymin>
+        <xmax>321</xmax>
+        <ymax>699</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1008</xmin>
+        <ymin>332</ymin>
+        <xmax>1081</xmax>
+        <ymax>410</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>822</xmin>
+        <ymin>667</ymin>
+        <xmax>898</xmax>
+        <ymax>726</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>909</xmin>
+        <ymin>667</ymin>
+        <xmax>1007</xmax>
+        <ymax>745</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1001</xmin>
+        <ymin>666</ymin>
+        <xmax>1029</xmax>
+        <ymax>687</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>bus</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>924</xmin>
+        <ymin>619</ymin>
+        <xmax>993</xmax>
+        <ymax>679</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>person</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1507</xmin>
+        <ymin>614</ymin>
+        <xmax>1534</xmax>
+        <ymax>681</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>traffic_sign</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>1069</xmin>
+        <ymin>620</ymin>
+        <xmax>1081</xmax>
+        <ymax>638</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>bus</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>449</xmin>
+        <ymin>598</ymin>
+        <xmax>620</xmax>
+        <ymax>722</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>bus</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>636</xmin>
+        <ymin>634</ymin>
+        <xmax>757</xmax>
+        <ymax>709</ymax>
+    </bndbox>
+</object>
+</annotation>

@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<annotation>
+<folder>4</folder>
+<filename>FILE200420-194559F_408.jpg</filename>
+<path>C:\Users\陌上倾城\Desktop\changchun_group1 - 副本\4\FILE200420-194559F_408.jpg</path>
+<source>
+    <database>Unknown</database>
+</source>
+<size>
+    <width>1920</width>
+    <height>1080</height>
+    <depth>3</depth>
+</size>
+
+<segmented>0</segmented>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>747</xmin>
+        <ymin>674</ymin>
+        <xmax>874</xmax>
+        <ymax>765</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>truck</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>490</xmin>
+        <ymin>590</ymin>
+        <xmax>668</xmax>
+        <ymax>703</ymax>
+    </bndbox>
+</object>
+    <object>
+    <name>vehicle</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+        <xmin>695</xmin>
+        <ymin>666</ymin>
+        <xmax>748</xmax>
+        <ymax>695</ymax>
+    </bndbox>
+</object>
+</annotation>
