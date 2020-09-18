@@ -32,7 +32,8 @@ def xml_to_csv(path):
         tree = ET.parse(xml_file)
         root = tree.getroot()
         for member in root.findall("object"):
-            classes_names.append(member[0].text)
+            classes_names.append(member[0].text.lstrip(' '))
+            classes_names=list(dict.fromkeys(classes_names))
             value = (
                 root.find("filename").text,
                 int(root.find("size")[0].text),
@@ -106,7 +107,7 @@ def main():
             pbtxt_content = (
                 pbtxt_content
                 + "item {{\n    id: {0}\n    name: '{1}'\n}}\n\n".format(
-                    i + 1, class_name
+                    i+1, class_name
                 )
             )
         pbtxt_content = pbtxt_content.strip()

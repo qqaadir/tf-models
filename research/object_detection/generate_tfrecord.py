@@ -67,6 +67,7 @@ def create_tf_example(group, path, label_map):
     classes = []
 
     for index, row in group.object.iterrows():
+        row["class"]=row["class"].lstrip(' ')
         xmins.append(row["xmin"] / width)
         xmaxs.append(row["xmax"] / width)
         ymins.append(row["ymin"] / height)
@@ -79,7 +80,7 @@ def create_tf_example(group, path, label_map):
             row["class"], label_map
         )
         classes.append(class_index)
-
+        classes = list(dict.fromkeys(classes))
     tf_example = tf.train.Example(
         features=tf.train.Features(
             feature={
