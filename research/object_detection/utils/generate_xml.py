@@ -26,10 +26,10 @@ class GenerateXml(object):
             ET.SubElement(objectBox, "truncated").text = "0"
             ET.SubElement(objectBox, "difficult").text = "0"
             bndBox = ET.SubElement(objectBox, "bndbox")
-            ET.SubElement(bndBox, "xmin").text = str(i['xmin'])
-            ET.SubElement(bndBox, "ymin").text = str(i['ymin'])
-            ET.SubElement(bndBox, "xmax").text = str(i['xmax'])
-            ET.SubElement(bndBox, "ymax").text = str(i['ymax'])
+            ET.SubElement(bndBox, "xmin").text = str(round(i['xmin']))
+            ET.SubElement(bndBox, "ymin").text = str(round(i['ymin']))
+            ET.SubElement(bndBox, "xmax").text = str(round(i['xmax']))
+            ET.SubElement(bndBox, "ymax").text = str(round(i['ymax']))
 
         arquivo = ET.ElementTree(annotation)
         print('CREATING XML FILE')
